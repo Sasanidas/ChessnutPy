@@ -135,7 +135,7 @@ if __name__ == "__main__":
         p.print_values(file=lf)
     logging.basicConfig(filename=options.logfile,
                         filemode='a', level=logging.INFO)
-    logging.getLogger("aiohttp").setLevel(logging.WARNING)
+    logging.getLogger("aiohttp").setLevel(logging.INFO)
 
     def exit_handler():
         save_config(options)
